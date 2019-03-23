@@ -1,0 +1,26 @@
+{% include "header.html" %}
+<h1 class="header">New Movie Item</h1>
+<form action="{{url_for('newItem')}}"
+  method="POST">
+  <p>Name:</p>
+  <input type="text" size="30" name="name">
+  <p>Author:</p>
+  <input type="text" size="30" name="author">
+  <p>description:</p>
+  <input type="text" size="30" name="description">
+  <p>Category:</p>
+  <select name="category_id">
+    <option value=1 >Autobiographies</option>
+    <option value=2 >Economics</option>
+    <option value=3 >History</option>
+    <option value=4 >Literature</option>
+    <option value=5 >Philosophy</option>
+    <option value=6 >MISC.</option>
+  </select>
+  </br></br>
+  <input type="submit" value ="Create">
+  <a href = "{{url_for('homePage')}}"><button type="button">Cancel</button></a>
+  </br></br>
+</form>
+</body>
+</html>

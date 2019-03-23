@@ -1,0 +1,26 @@
+{% include "header.html" %}
+<h1 class="header">Edit Book Item</h1>
+<form action="{{url_for('editItem' ,categories_id=categories_id, items_id=items_id, item=editedItem)}}"
+  method="POST">
+  <p>Name:</p>
+  <input type="text" size="30" name="name" placeholder = '{{item.name}}'>
+  <p>Author:</p>
+  <input type="text" size="30" name="author" placeholder = '{{item.author}}'>
+  <p>Description:</p>
+  <input type="text" size="30"  name="description" placeholder = '{{item.description}}'>
+  <p>Category:</p>
+  <select name="category_id">
+    <option value=1 >Autobiographies</option>
+    <option value=2 >Economics</option>
+    <option value=3 >History</option>
+    <option value=4 >Literature</option>
+    <option value=5 >Philosophy</option>
+    <option value=6 >MISC.</option>
+  </select>
+  </br></br>
+  <input type="submit" value ="Update">
+  <a href = "{{url_for('showItem',categories_id=categories_id, items_id=items_id)}}"><button type="button">Cancel</button></a>
+  </br></br>
+</form>
+</body>
+</html>
