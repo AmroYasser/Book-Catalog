@@ -1,5 +1,5 @@
 # Book Catalog
-This is one of the projects of the [Full Stack Nanodegree on Udacity](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004). Named in the course *"Item Catalog"*.
+This is one of the projects of the [Full Stack Nanodegree on Udacity](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004). Named in the course _**"Item Catalog"**_.
 
 It runs a website called Book Catalog that contain suggestions of books (referred to them in the code as "items") in 6 categories.
 
